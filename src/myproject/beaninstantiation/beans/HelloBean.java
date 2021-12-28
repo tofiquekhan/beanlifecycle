@@ -14,8 +14,5 @@ public class HelloBean {
 		return "Hello User!";
 	}
 	
-	public static HelloBean getInstance() {
-		System.out.println("Static Factory Method");
-		return new HelloBean();
-	}
+	
 }

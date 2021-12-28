@@ -3,8 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
- <bean id="helloBean" class="myproject.beaninstantiation.beans.HelloBean" factory-method="getInstance">
- 
- 
+ <bean id="helloBean" class="myproject.beaninstantiation.beans.HelloBean" factory-method="getHelloBeanInstance" factory-bean="factoryBean">
  </bean>
+ <bean id="factoryBean" class="myproject.beaninstantiation.factory.HelloBeanFactory"></bean>
+ 
+ 
  </beans>
