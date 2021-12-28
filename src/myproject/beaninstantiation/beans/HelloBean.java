@@ -6,7 +6,7 @@ public class HelloBean {
 		System.out.println("HelloBean class loading......");
 	}
 	
-	public HelloBean() {
+	private HelloBean() {
 		System.out.println("HelloBean class Instantiation..........");
 	}
 	
